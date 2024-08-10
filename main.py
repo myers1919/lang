@@ -3,6 +3,7 @@ import sys
 
 from gamestate import Gamestate
 from ui import UI
+from controller import Controller
 
 def main():
     pygame.init()
@@ -10,14 +11,16 @@ def main():
 
     ui = UI()
     gamestate = Gamestate()
+    controller = Controller(gamestate, ui)
 
     running = True
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            pass
-
+            controller.handle_event(event)
+        controller.update()
+        controller.render()
     pygame.quit()
     sys.exit()
 

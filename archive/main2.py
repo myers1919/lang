@@ -1,29 +1,26 @@
 import pygame
 import sys
 
-from gamestate import Gamestate
-from ui import UI
-
-from config import *
-
+from archive.gamestate import Gamestate
+from archive.ui import UI
+from archive.controller import Controller
 
 def main():
-    print('*'*50)
     pygame.init()
     pygame.mixer.init()
 
+    ui = UI()
     gamestate = Gamestate()
-    ui = UI(gamestate)
+    controller = Controller(gamestate, ui)
 
     running = True
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            ui.handle_event(event)
-        gamestate.update()
-        ui.update()
-        ui.render()
+            controller.handle_event(event)
+        controller.update()
+        controller.render()
     pygame.quit()
     sys.exit()
 

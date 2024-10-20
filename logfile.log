@@ -1,0 +1,9 @@
+2024-10-19 14:16:10 - **************************************************
+2024-10-19 14:16:10 - GAMESTATE > CONSTRUCTOR: Default current state set to None.
+2024-10-19 14:16:10 - GAMESTATE > CONSTRUCTOR: Default previous state set to None.
+2024-10-19 14:16:10 - UI > CONSTRUCTOR: Default button list is: [].
+2024-10-19 14:16:10 - UI > CONSTRUCTOR: Default button list is: [].
+2024-10-19 14:16:10 - GAMESTATE > CHANGE_STATE: Previous state has been changed to None.
+2024-10-19 14:16:10 - GAMESTATE > CHANGE_STATE: Previous state has been changed to None.
+2024-10-19 14:16:10 - GAMESTATE > CHANGE_STATE: Current state has been changed to main.
+2024-10-19 14:16:10 - GAMESTATE > CHANGE_STATE: Current state has been changed to main.

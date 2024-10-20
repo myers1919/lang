@@ -1,3 +1,5 @@
+import pygame
+
 class Controller:
     def __init__(self, gamestate, ui):
         self.gamestate = gamestate
@@ -11,4 +13,5 @@ class Controller:
         self.ui.update(self.gamestate)
 
     def render(self):
-        pass
+        self.ui.render(self.gamestate)
+        pygame.display.flip()

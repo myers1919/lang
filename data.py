@@ -39,4 +39,8 @@ class Data:
 
     def get_current_alternatives(self):
         import Levenshtein
-        print("Getting alternative answers.")
+        df = self.dataset.copy()
+        df['L'] = self.dataset['englisch'].apply(lambda x: Levenshtein.distance(x, self.answer))
+        df = df.sort_values(by=['L'], ascending=True)
+        self.alternatives = df.englisch[1:4].tolist()
+        print(f"Alternative answers are: {self.alternatives}")

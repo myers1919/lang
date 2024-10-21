@@ -33,8 +33,21 @@ class UI:
         elif self.gamestate.current_state == 'stats':
             self.buttons = [self.main_button, self.stats_button, self.vocab_button]
         elif self.gamestate.current_state == 'vocab':
-            self.buttons = [self.main_button]
+            # Initialize buttons for current item
+            self.item_button = Button(200,200,200,50,self.gamestate.data.question,self.font,WHITE,WHITE,lambda: self.gamestate.change_state('vocab'))
+            self.option1_button = Button(100,300,200,50,self.gamestate.data.answer,self.font,YELLOW,YELLOW_HOVER,lambda: self.gamestate.change_state('vocab'))
+            self.option2_button = Button(400,300,200,50,self.gamestate.data.alternatives[0],self.font,YELLOW,YELLOW_HOVER,lambda: self.gamestate.change_state('vocab'))
+            self.option3_button = Button(100,400,200,50,self.gamestate.data.alternatives[1],self.font,YELLOW,YELLOW_HOVER,lambda: self.gamestate.change_state('vocab'))
+            self.option4_button = Button(400,400,200,50,self.gamestate.data.alternatives[2],self.font,YELLOW,YELLOW_HOVER,lambda: self.gamestate.change_state('vocab'))
             
+            self.buttons = [
+                self.main_button,
+                self.item_button,
+                self.option1_button,
+                self.option2_button,
+                self.option3_button,
+                self.option4_button
+                ]
 
     def render(self):
         self.screen.fill((0, 0, 0))

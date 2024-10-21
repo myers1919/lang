@@ -38,5 +38,29 @@
     "10": {
         "deutsch": "die Verdunstung",
         "englisch": "the evaporation"
+    },
+    "11": {
+        "deutsch": "die Windel",
+        "englisch": "the diaper"
+    },
+    "12": {
+        "deutsch": "die Verdeidigung",
+        "englisch": "the defense"
+    },
+    "13": {
+        "deutsch": "die Teekuche",
+        "englisch": "the kitchen area  "
+    },
+    "14": {
+        "deutsch": "die Traube",
+        "englisch": "the grape"
+    },
+    "15": {
+        "deutsch": "der Berater",
+        "englisch": "the consultant"
+    },
+    "16": {
+        "deutsch": "der Fehler",
+        "englisch": "the mistake"
     }
 }

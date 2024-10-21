@@ -7,9 +7,10 @@ class Gamestate:
         self.logger = Logger()
         self.current_state = None # Set default current state to NoneType
         self.previous_state = None # Set default previous state to NoneType
-        self.data = Data()
         print(f"GAMESTATE > CONSTRUCTOR: Default current state set to {self.current_state}.")
         print(f"GAMESTATE > CONSTRUCTOR: Default previous state set to {self.previous_state}.")
+        self.data = Data()
+        self.item_loaded = False
 
     def change_state(self, new_state):
         self.previous_state = self.current_state # Set previous state to the current state
@@ -18,10 +19,13 @@ class Gamestate:
         print(f"GAMESTATE > CHANGE_STATE: Current state has been changed to {self.current_state}.")
 
     def update(self):
-        # Always change None state to Main state
-        if self.current_state == None:
+        if self.current_state == None: # Always change None state to Main state
             self.change_state('main')
         if self.current_state == 'main':
-            pass
+            self.item_loaded = False # Unload current items
+        if self.current_state == 'stats':
+            self.item_loaded = False # Unload current items
         if self.current_state == 'vocab':
-            pass
+            if self.item_loaded == False:
+                self.data.get_item()
+                self.item_loaded = True

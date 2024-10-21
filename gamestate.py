@@ -10,7 +10,7 @@ class Gamestate:
         print(f"GAMESTATE > CONSTRUCTOR: Default current state set to {self.current_state}.")
         print(f"GAMESTATE > CONSTRUCTOR: Default previous state set to {self.previous_state}.")
         self.data = Data()
-        self.item_loaded = False
+        self.items_loaded = False
 
     def change_state(self, new_state):
         self.previous_state = self.current_state # Set previous state to the current state
@@ -22,10 +22,10 @@ class Gamestate:
         if self.current_state == None: # Always change None state to Main state
             self.change_state('main')
         if self.current_state == 'main':
-            self.item_loaded = False # Unload current items
+            self.items_loaded = False # Unload current items
         if self.current_state == 'stats':
-            self.item_loaded = False # Unload current items
+            self.items_loaded = False # Unload current items
         if self.current_state == 'vocab':
-            if self.item_loaded == False:
-                self.data.get_item()
-                self.item_loaded = True
+            if self.items_loaded == False:
+                self.data.get_items()
+                self.items_loaded = True

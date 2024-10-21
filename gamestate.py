@@ -11,6 +11,8 @@ class Gamestate:
         print(f"GAMESTATE > CONSTRUCTOR: Default previous state set to {self.previous_state}.")
         self.data = Data()
         self.items_loaded = False
+        self.current_item_is_selected = False
+        self.current_alternatives_is_selected = False
 
     def change_state(self, new_state):
         self.previous_state = self.current_state # Set previous state to the current state
@@ -22,10 +24,28 @@ class Gamestate:
         if self.current_state == None: # Always change None state to Main state
             self.change_state('main')
         if self.current_state == 'main':
-            self.items_loaded = False # Unload current items
+            self.reset_item_flags() # Unload current items
         if self.current_state == 'stats':
-            self.items_loaded = False # Unload current items
+            self.reset_item_flags() # Unload current items
+        ######################
+        ### Vocabulary Mode
+        ######################
         if self.current_state == 'vocab':
             if self.items_loaded == False:
                 self.data.get_items()
                 self.items_loaded = True
+            if self.current_item_is_selected == False: # Load a new current item if one is not already selected
+                self.data.get_current_item() # Get a single item entry from the item set list
+                self.data.parse_current_item() # Parse the item entry to separate the question and the answer
+                self.current_item_is_selected = True
+            if self.current_alternatives_is_selected == False: # Get alternative answers for current item
+                self.data.get_current_alternatives()
+                self.current_alternatives_is_selected = True
+        
+    def reset_item_flags(self):
+        '''
+        Resets all item-related flags to False so that a new item may be prepared.
+        '''
+        self.current_item_is_selected = False
+        self.current_item_is_selected = False
+        self.current_alternatives_is_selected = False

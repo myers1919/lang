@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import random
 
 class Data:
     def __init__(self):
@@ -12,3 +13,7 @@ class Data:
         data = pd.DataFrame(data)
         data = data.transpose()
         return data
+    
+    def get_item(self):
+        rng = random.randint(0, len(self.dataset))
+        print(rng)

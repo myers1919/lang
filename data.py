@@ -17,7 +17,7 @@ class Data:
     
     def get_items(self):
         df = self.dataset.copy()
-        set_size = 5
+        set_size = 10
         item_set = [] # Empty list for collecting selected item IDs
         for i in range(set_size):
             rng = random.randint(0, len(self.dataset)-1)
@@ -28,7 +28,6 @@ class Data:
 
     def get_current_item(self):
         if len(self.item_set) > 0:
-            print(f"ITEM SET: {self.item_set}")
             self.current_item = self.item_set[0]
 
     def parse_current_item(self):

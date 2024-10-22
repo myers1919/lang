@@ -41,7 +41,7 @@ class UI:
                 print(f"Before shuffle: {option_button_locations}")
                 random.shuffle(option_button_locations)
                 print(f"After shuffle: {option_button_locations}")
-                self.option1_button = Button(option_button_locations[0][0],option_button_locations[0][1],200,50,self.gamestate.data.answer,self.font,WHITE,PINK_HOVER,lambda: self.gamestate.get_result(True))
+                self.option1_button = Button(option_button_locations[0][0],option_button_locations[0][1],200,50,self.gamestate.data.answer,self.font,WHITE,WHITE_HOVER,lambda: self.gamestate.get_result(True))
                 self.option2_button = Button(option_button_locations[1][0],option_button_locations[1][1],200,50,self.gamestate.data.alternatives[0],self.font,WHITE,WHITE_HOVER,lambda: self.gamestate.get_result(False))
                 self.option3_button = Button(option_button_locations[2][0],option_button_locations[2][1],200,50,self.gamestate.data.alternatives[1],self.font,WHITE,WHITE_HOVER,lambda: self.gamestate.get_result(False))
                 self.option4_button = Button(option_button_locations[3][0],option_button_locations[3][1],200,50,self.gamestate.data.alternatives[2],self.font,WHITE,WHITE_HOVER,lambda: self.gamestate.get_result(False))

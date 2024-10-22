@@ -73,3 +73,4 @@ class Gamestate:
         if result == False:
             print("That is incorrect.")
             print(len(self.data.item_set))
+        self.current_alternatives_is_selected = False # Dump alternatives so new ones may be selected

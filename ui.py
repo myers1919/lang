@@ -37,7 +37,7 @@ class UI:
             # Initialize buttons for current item
             if self.gamestate.awaiting_response == False:
                 self.item_button = Button(300,200,200,50,self.gamestate.data.question,self.font,YELLOW,YELLOW,lambda: self.gamestate.change_state('vocab'))
-                option_button_locations = [[150,300],[450,300],[150,400],[450,400]]
+                option_button_locations = [[150,300],[450,300],[150,375],[450,375]]
                 print(f"Before shuffle: {option_button_locations}")
                 random.shuffle(option_button_locations)
                 print(f"After shuffle: {option_button_locations}")

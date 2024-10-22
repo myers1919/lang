@@ -13,6 +13,7 @@ class Gamestate:
         self.items_loaded = False
         self.current_item_is_selected = False
         self.current_alternatives_is_selected = False
+        self.awaiting_response = False
 
     def change_state(self, new_state):
         self.previous_state = self.current_state # Set previous state to the current state
@@ -41,6 +42,9 @@ class Gamestate:
             if self.current_alternatives_is_selected == False: # Get alternative answers for current item
                 self.data.get_current_alternatives()
                 self.current_alternatives_is_selected = True
+
+                if self.data.item_set == 0:
+                    self.change_state('main')
         
     def reset_item_flags(self):
         '''
@@ -49,14 +53,18 @@ class Gamestate:
         self.current_item_is_selected = False
         self.current_item_is_selected = False
         self.current_alternatives_is_selected = False
+        self.awaiting_response = False
 
     def get_result(self,result):
         '''
         Checks answer. Resets flag so the next question can be loaded.
         '''
+        self.data.item_set = self.data.item_set[1:]
+        self.current_item_is_selected = False
+        self.awaiting_response = False
         if result == True:
             print("That's correct!")
-            print((self.data.item_set))
+            print(len(self.data.item_set))
         if result == False:
             print("That is incorrect.")
             print(len(self.data.item_set))

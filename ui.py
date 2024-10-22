@@ -36,9 +36,10 @@ class UI:
             self.buttons = [self.main_button, self.stats_button, self.vocab_button]
         elif self.gamestate.current_state == 'vocab':
             # Initialize buttons for current item
-            if self.item_printed == False:
-                self.item_button = Button(200,200,200,50,self.gamestate.data.question,self.font,YELLOW,YELLOW,lambda: self.gamestate.change_state('vocab'))
-                option_button_locations = [[100,300],[400,300],[100,400],[400,400]]
+            #if self.item_printed == False:
+            if self.gamestate.awaiting_response == False:
+                self.item_button = Button(300,200,200,50,self.gamestate.data.question,self.font,YELLOW,YELLOW,lambda: self.gamestate.change_state('vocab'))
+                option_button_locations = [[150,300],[450,300],[150,400],[450,400]]
                 print(f"Before shuffle: {option_button_locations}")
                 random.shuffle(option_button_locations)
                 print(f"After shuffle: {option_button_locations}")
@@ -57,6 +58,8 @@ class UI:
                     self.option3_button,
                     self.option4_button
                     ]
+
+                self.gamestate.awaiting_response = True
 
     def render(self):
         self.screen.fill((0, 0, 0))

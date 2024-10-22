@@ -38,5 +38,365 @@
     "10": {
         "deutsch": "die Verdunstung",
         "englisch": "the evaporation"
+    },
+    "11": {
+        "deutsch": "die Windel",
+        "englisch": "the diaper"
+    },
+    "12": {
+        "deutsch": "die Verdeidigung",
+        "englisch": "the defense"
+    },
+    "13": {
+        "deutsch": "die Teekuche",
+        "englisch": "the kitchen area  "
+    },
+    "14": {
+        "deutsch": "die Traube",
+        "englisch": "the grape"
+    },
+    "15": {
+        "deutsch": "der Berater",
+        "englisch": "the consultant"
+    },
+    "16": {
+        "deutsch": "der Fehler",
+        "englisch": "the mistake"
+    },
+    "17": {
+        "deutsch": "der Apfel",
+        "englisch": "the apple"
+    },
+    "18": {
+        "deutsch": "die Katze",
+        "englisch": "the cat"
+    },
+    "19": {
+        "deutsch": "das Haus",
+        "englisch": "the house"
+    },
+    "20": {
+        "deutsch": "der Stuhl",
+        "englisch": "the chair"
+    },
+    "21": {
+        "deutsch": "die Blume",
+        "englisch": "the flower"
+    },
+    "22": {
+        "deutsch": "das Auto",
+        "englisch": "the car"
+    },
+    "23": {
+        "deutsch": "der Tisch",
+        "englisch": "the table"
+    },
+    "24": {
+        "deutsch": "die Sonne",
+        "englisch": "the sun"
+    },
+    "25": {
+        "deutsch": "das Buch",
+        "englisch": "the book"
+    },
+    "26": {
+        "deutsch": "der Hund",
+        "englisch": "the dog"
+    },
+    "27": {
+        "deutsch": "die Lampe",
+        "englisch": "the lamp"
+    },
+    "28": {
+        "deutsch": "das Wasser",
+        "englisch": "the water"
+    },
+    "29": {
+        "deutsch": "der Baum",
+        "englisch": "the tree"
+    },
+    "30": {
+        "deutsch": "die Tur",
+        "englisch": "the door"
+    },
+    "31": {
+        "deutsch": "das Kind",
+        "englisch": "the child"
+    },
+    "32": {
+        "deutsch": "die Schule",
+        "englisch": "the school"
+    },
+    "33": {
+        "deutsch": "der Vogel",
+        "englisch": "the bird"
+    },
+    "34": {
+        "deutsch": "der Spiegel",
+        "englisch": "the mirror"
+    },
+    "35": {
+        "deutsch": "die Erfahrung",
+        "englisch": "the experience"
+    },
+    "36": {
+        "deutsch": "das Geheimnis",
+        "englisch": "the secret"
+    },
+    "37": {
+        "deutsch": "der Fortschritt",
+        "englisch": "the progress"
+    },
+    "38": {
+        "deutsch": "die Umgebung",
+        "englisch": "the surroundings"
+    },
+    "39": {
+        "deutsch": "das Verhalten",
+        "englisch": "the behavior"
+    },
+    "40": {
+        "deutsch": "der Gedanke",
+        "englisch": "the thought"
+    },
+    "41": {
+        "deutsch": "die Erfindung",
+        "englisch": "the invention"
+    },
+    "42": {
+        "deutsch": "das Ziel",
+        "englisch": "the goal"
+    },
+    "43": {
+        "deutsch": "der Wettbewerb",
+        "englisch": "the competition"
+    },
+    "44": {
+        "deutsch": "die Verantwortung",
+        "englisch": "the responsibility"
+    },
+    "45": {
+        "deutsch": "der Einfluss",
+        "englisch": "the influence"
+    },
+    "46": {
+        "deutsch": "das Ergebnis",
+        "englisch": "the result"
+    },
+    "47": {
+        "deutsch": "der Untershied",
+        "englisch": "the difference"
+    },
+    "48": {
+        "deutsch": "die Beziehung",
+        "englisch": "the relationship"
+    },
+    "49": {
+        "deutsch": "das Vorurteil",
+        "englisch": "the prejudice"
+    },
+    "50": {
+        "deutsch": "der Vorschlag",
+        "englisch": "the suggestion"
+    },
+    "51": {
+        "deutsch": "die Herausforderung",
+        "englisch": "the challenge"
+    },
+    "52": {
+        "deutsch": "der Ball",
+        "englisch": "the ball"
+    },
+    "53": {
+        "deutsch": "das Fahrrad",
+        "englisch": "the bicycle"
+    },
+    "54": {
+        "deutsch": "die Gabel",
+        "englisch": "the fork"
+    },
+    "55": {
+        "deutsch": "das Fenster",
+        "englisch": "the window"
+    },
+    "56": {
+        "deutsch": "der Berg",
+        "englisch": "the mountain"
+    },
+    "57": {
+        "deutsch": "der Fisch",
+        "englisch": "the fish"
+    },
+    "58": {
+        "deutsch": "das Zimmer",
+        "englisch": "the room"
+    },
+    "59": {
+        "deutsch": "das Brot",
+        "englisch": "the bread"
+    },
+    "60": {
+        "deutsch": "das Bett",
+        "englisch": "the bed"
+    },
+    "61": {
+        "deutsch": "der Fenster",
+        "englisch": "the window"
+    },
+    "62": {
+        "deutsch": "der Regen",
+        "englisch": "the rain"
+    },
+    "63": {
+        "deutsch": "die Brille",
+        "englisch": "the glasses"
+    },
+    "64": {
+        "deutsch": "der Zug",
+        "englisch": "the train"
+    },
+    "65": {
+        "deutsch": "die Zeitung",
+        "englisch": "the newspaper"
+    },
+    "66": {
+        "deutsch": "das Tier",
+        "englisch": "the animal"
+    },
+    "67": {
+        "deutsch": "die Kuche",
+        "englisch": "the kitchen"
+    },
+    "68": {
+        "deutsch": "das Kleid",
+        "englisch": "the dress"
+    },
+    "69": {
+        "deutsch": "der Schlussel",
+        "englisch": "the key"
+    },
+    "70": {
+        "deutsch": "die Tasche",
+        "englisch": "the bag"
+    },
+    "71": {
+        "deutsch": "die Brucke",
+        "englisch": "the bridge"
+    },
+    "72": {
+        "deutsch": "das Bild",
+        "englisch": "the picture"
+    },
+    "73": {
+        "deutsch": "der Stift",
+        "englisch": "the pen"
+    },
+    "74": {
+        "deutsch": "das Licht",
+        "englisch": "the light"
+    },
+    "75": {
+        "deutsch": "der Kuchen",
+        "englisch": "the cake"
+    },
+    "76": {
+        "deutsch": "die Tasse",
+        "englisch": "the cup"
+    },
+    "77": {
+        "deutsch": "die Wand",
+        "englisch": "the wall"
+    },
+    "78": {
+        "deutsch": "das Papier",
+        "englisch": "the paper"
+    },
+    "79": {
+        "deutsch": "das Messer",
+        "englisch": "the knife"
+    },
+    "80": {
+        "deutsch": "der Markt",
+        "englisch": "the market"
+    },
+    "81": {
+        "deutsch": "die Flasche",
+        "englisch": "the bottle"
+    },
+    "82": {
+        "deutsch": "die Klinik",
+        "englisch": "the clinic"
+    },
+    "83": {
+        "deutsch": "der Artz",
+        "englisch": "the doctor"
+    },
+    "84": {
+        "deutsch": "die Bibliothek",
+        "englisch": "the library"
+    },
+    "85": {
+        "deutsch": "das Buchregal",
+        "englisch": "the bookshelf"
+    },
+    "86": {
+        "deutsch": "der Fernseher",
+        "englisch": "the television"
+    },
+    "87": {
+        "deutsch": "die Farbe",
+        "englisch": "the color"
+    },
+    "88": {
+        "deutsch": "die Welt",
+        "englisch": "the world"
+    },
+    "89": {
+        "deutsch": "das Spiel",
+        "englisch": "the game"
+    },
+    "90": {
+        "deutsch": "die Uhr",
+        "englisch": "the clock"
+    },
+    "91": {
+        "deutsch": "die Eindruck",
+        "englisch": "the impression"
+    },
+    "92": {
+        "deutsch": "die Fahigkeit",
+        "englisch": "the ability"
+    },
+    "93": {
+        "deutsch": "das Konzept",
+        "englisch": "the concept"
+    },
+    "94": {
+        "deutsch": "die Entwicklung",
+        "englisch": "the development"
+    },
+    "95": {
+        "deutsch": "der Beitrag",
+        "englisch": "the contribution"
+    },
+    "96": {
+        "deutsch": "der Ansatz",
+        "englisch": "the approach"
+    },
+    "97": {
+        "deutsch": "die Strategie",
+        "englisch": "the strategy"
+    },
+    "98": {
+        "deutsch": "die Anwendung",
+        "englisch": "the application"
+    },
+    "99": {
+        "deutsch": "das Interesse",
+        "englisch": "the interest"
+    },
+    "100": {
+        "deutsch": "der Versuch",
+        "englisch": "the attempt"
     }
 }

@@ -1,4 +1,5 @@
 import pygame
+import random
 
 from button import Button
 
@@ -15,6 +16,7 @@ class UI:
         self.font = pygame.font.Font(None, 24)
         self.buttons = []
         self.init_buttons()
+        self.item_printed = False
         print(f"UI > CONSTRUCTOR: Default button list is: {self.buttons}.")
 
     def init_buttons(self):
@@ -34,20 +36,27 @@ class UI:
             self.buttons = [self.main_button, self.stats_button, self.vocab_button]
         elif self.gamestate.current_state == 'vocab':
             # Initialize buttons for current item
-            self.item_button = Button(200,200,200,50,self.gamestate.data.question,self.font,WHITE,WHITE,lambda: self.gamestate.change_state('vocab'))
-            self.option1_button = Button(100,300,200,50,self.gamestate.data.answer,self.font,YELLOW,YELLOW_HOVER,lambda: self.gamestate.change_state('vocab'))
-            self.option2_button = Button(400,300,200,50,self.gamestate.data.alternatives[0],self.font,YELLOW,YELLOW_HOVER,lambda: self.gamestate.change_state('vocab'))
-            self.option3_button = Button(100,400,200,50,self.gamestate.data.alternatives[1],self.font,YELLOW,YELLOW_HOVER,lambda: self.gamestate.change_state('vocab'))
-            self.option4_button = Button(400,400,200,50,self.gamestate.data.alternatives[2],self.font,YELLOW,YELLOW_HOVER,lambda: self.gamestate.change_state('vocab'))
-            
-            self.buttons = [
-                self.main_button,
-                self.item_button,
-                self.option1_button,
-                self.option2_button,
-                self.option3_button,
-                self.option4_button
-                ]
+            if self.item_printed == False:
+                self.item_button = Button(200,200,200,50,self.gamestate.data.question,self.font,YELLOW,YELLOW,lambda: self.gamestate.change_state('vocab'))
+                option_button_locations = [[100,300],[400,300],[100,400],[400,400]]
+                print(f"Before shuffle: {option_button_locations}")
+                random.shuffle(option_button_locations)
+                print(f"After shuffle: {option_button_locations}")
+                self.option1_button = Button(option_button_locations[0][0],option_button_locations[0][1],200,50,self.gamestate.data.answer,self.font,WHITE,PINK_HOVER,lambda: self.gamestate.get_result(True))
+                self.option2_button = Button(option_button_locations[1][0],option_button_locations[1][1],200,50,self.gamestate.data.alternatives[0],self.font,WHITE,WHITE_HOVER,lambda: self.gamestate.get_result(False))
+                self.option3_button = Button(option_button_locations[2][0],option_button_locations[2][1],200,50,self.gamestate.data.alternatives[1],self.font,WHITE,WHITE_HOVER,lambda: self.gamestate.get_result(False))
+                self.option4_button = Button(option_button_locations[3][0],option_button_locations[3][1],200,50,self.gamestate.data.alternatives[2],self.font,WHITE,WHITE_HOVER,lambda: self.gamestate.get_result(False))
+
+                self.item_printed = True
+
+                self.buttons = [
+                    self.main_button,
+                    self.item_button,
+                    self.option1_button,
+                    self.option2_button,
+                    self.option3_button,
+                    self.option4_button
+                    ]
 
     def render(self):
         self.screen.fill((0, 0, 0))

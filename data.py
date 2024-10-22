@@ -28,7 +28,8 @@ class Data:
 
     def get_current_item(self):
         if len(self.item_set) > 0:
-            self.current_item = self.item_set.pop() # Grab the last item from the list first and delete it from the set
+            #self.current_item = self.item_set.pop() # Grab the last item from the list first and delete it from the set
+            self.current_item = self.item_set[0]
             print(f"A single current item has been grabbed from the item set.")
 
     def parse_current_item(self):

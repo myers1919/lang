@@ -49,3 +49,14 @@ class Gamestate:
         self.current_item_is_selected = False
         self.current_item_is_selected = False
         self.current_alternatives_is_selected = False
+
+    def get_result(self,result):
+        '''
+        Checks answer. Resets flag so the next question can be loaded.
+        '''
+        if result == True:
+            print("That's correct!")
+            print((self.data.item_set))
+        if result == False:
+            print("That is incorrect.")
+            print(len(self.data.item_set))

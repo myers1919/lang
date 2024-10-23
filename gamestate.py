@@ -69,8 +69,21 @@ class Gamestate:
         self.awaiting_response = False
         if result == True:
             print("That's correct!")
-            print(len(self.data.item_set))
+            print(f"Updating item with ID: {self.data.id}")
+            # Increment number of times the item has been seen
+            self.data.stats.loc[self.data.stats['id'] == self.data.id, 'n_seen'] += 1
+            self.data.stats.loc[self.data.stats['id'] == self.data.id, 'n_correct'] += 1
+            ###df.loc[df['id'] == 14, 'count'] += 1
         if result == False:
             print("That is incorrect.")
-            print(len(self.data.item_set))
+            print(f"Updating item with ID: {self.data.id}")
+            # Increment number of times the item has been seen
+            self.data.stats.loc[self.data.stats['id'] == self.data.id, 'n_seen'] += 1
+            self.data.stats.loc[self.data.stats['id'] == self.data.id, 'n_incorrect'] += 1
+        n_seen = self.data.stats.loc[self.data.stats['id'] == self.data.id, 'n_seen']
+        n_correct = self.data.stats.loc[self.data.stats['id'] == self.data.id, 'n_correct']
+        self.data.stats.loc[self.data.stats['id'] == self.data.id, '%_correct'] = n_correct / n_seen # Update % correct
+        self.data.stats = self.data.stats.sort_values(by=['n_seen','%_correct'], ascending=[False,False])
+        print(f"There are {len(self.data.item_set)} items remaining in the set.")
         self.current_alternatives_is_selected = False # Dump alternatives so new ones may be selected
+        self.data.stats.to_csv('data/stats.csv', index=False, encoding="utf-8") # Update saved version of stats .csv

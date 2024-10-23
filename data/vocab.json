@@ -49,7 +49,7 @@
     },
     "13": {
         "deutsch": "die Teekuche",
-        "englisch": "the kitchen area  "
+        "englisch": "the kitchen area"
     },
     "14": {
         "deutsch": "die Traube",
@@ -398,5 +398,405 @@
     "100": {
         "deutsch": "der Versuch",
         "englisch": "the attempt"
+    },
+    "101": {
+        "deutsch": "das Dorf",
+        "englisch": "the village"
+    },
+    "102": {
+        "deutsch": "der Stern",
+        "englisch": "the star"
+    },
+    "103": {
+        "deutsch": "der Kaffee",
+        "englisch": "the coffee"
+    },
+    "104": {
+        "deutsch": "die Butter",
+        "englisch": "the butter"
+    },
+    "105": {
+        "deutsch": "das Flugzeug",
+        "englisch": "the airplane"
+    },
+    "106": {
+        "deutsch": "der Käse",
+        "englisch": "the cheese"
+    },
+    "107": {
+        "deutsch": "das Kissen",
+        "englisch": "the pillow"
+    },
+    "108": {
+        "deutsch": "der Teppich",
+        "englisch": "the carpet"
+    },
+    "109": {
+        "deutsch": "das Bad",
+        "englisch": "the bathroom"
+    },
+    "110": {
+        "deutsch": "die Jacke",
+        "englisch": "the jacket"
+    },
+    "111": {
+        "deutsch": "das Sofa",
+        "englisch": "the sofa"
+    },
+    "112": {
+        "deutsch": "die Schuh",
+        "englisch": "the shoe"
+    },
+    "113": {
+        "deutsch": "die Straße",
+        "englisch": "the street"
+    },
+    "114": {
+        "deutsch": "das Meer",
+        "englisch": "the sea"
+    },
+    "115": {
+        "deutsch": "der Fluss",
+        "englisch": "the river"
+    },
+    "116": {
+        "deutsch": "die Milch",
+        "englisch": "the milk"
+    },
+    "117": {
+        "deutsch": "der Mann",
+        "englisch": "the man"
+    },
+    "118": {
+        "deutsch": "die Frau",
+        "englisch": "the woman"
+    },
+    "119": {
+        "deutsch": "das Potenzial",
+        "englisch": "the potential"
+    },
+    "120": {
+        "deutsch": "die Musik",
+        "englisch": "the music"
+    },
+    "121": {
+        "deutsch": "das Lied",
+        "englisch": "the song"
+    },
+    "122": {
+        "deutsch": "das Baby",
+        "englisch": "the baby"
+    },
+    "123": {
+        "deutsch": "der Schnuller",
+        "englisch": "the pacifier"
+    },
+    "124": {
+        "deutsch": "die Wiege",
+        "englisch": "the cradle"
+    },
+    "125": {
+        "deutsch": "der Strampler",
+        "englisch": "the onesie"
+    },
+    "126": {
+        "deutsch": "die Babynahrung",
+        "englisch": "the baby food"
+    },
+    "127": {
+        "deutsch": "das Spielzeug",
+        "englisch": "the toy"
+    },
+    "128": {
+        "deutsch": "das Kuscheltier",
+        "englisch": "the stuffed animal"
+    },
+    "129": {
+        "deutsch": "der Latz",
+        "englisch": "the bib"
+    },
+    "130": {
+        "deutsch": "die Pfeife",
+        "englisch": "the whistle"
+    },
+    "131": {
+        "deutsch": "der Brennstoff",
+        "englisch": "the fuel"
+    },
+    "132": {
+        "deutsch": "die Energiequelle",
+        "englisch": "the energy source"
+    },
+    "133": {
+        "deutsch": "die Windkraft",
+        "englisch": "the wind energy"
+    },
+    "134": {
+        "deutsch": "die Kernenergie",
+        "englisch": "the nuclear energy"
+    },
+    "135": {
+        "deutsch": "das Gas",
+        "englisch": "the gas"
+    },
+    "136": {
+        "deutsch": "die Zelle",
+        "englisch": "the cell"
+    },
+    "137": {
+        "deutsch": "die Atmung",
+        "englisch": "the respiration"
+    },
+    "138": {
+        "deutsch": "die Decke",
+        "englisch": "the ceiling"
+    },
+    "139": {
+        "deutsch": "der Nährstoff",
+        "englisch": "the nutrient"
+    },
+    "140": {
+        "deutsch": "das Gewebe",
+        "englisch": "the tissue"
+    },
+    "141": {
+        "deutsch": "das Protein",
+        "englisch": "the protein"
+    },
+    "142": {
+        "deutsch": "die Evolution",
+        "englisch": "the evolution"
+    },
+    "143": {
+        "deutsch": "der Stoffwechsel",
+        "englisch": "the metabolism"
+    },
+    "144": {
+        "deutsch": "der Organismus",
+        "englisch": "the organism"
+    },
+    "145": {
+        "deutsch": "der Sport",
+        "englisch": "the sport"
+    },
+    "146": {
+        "deutsch": "die Mannschaft",
+        "englisch": "the team"
+    },
+    "147": {
+        "deutsch": "das Tor",
+        "englisch": "the goal (sports)"
+    },
+    "148": {
+        "deutsch": "der Trainer",
+        "englisch": "the trainer"
+    },
+    "149": {
+        "deutsch": "die Meisterschaft",
+        "englisch": "the championship"
+    },
+    "150": {
+        "deutsch": "das Turnier",
+        "englisch": "the tournament"
+    },
+    "151": {
+        "deutsch": "der Spieler",
+        "englisch": "the player"
+    },
+    "152": {
+        "deutsch": "die Liga",
+        "englisch": "the league"
+    },
+    "153": {
+        "deutsch": "die Ausrüstung",
+        "englisch": "the equipment"
+    },
+    "154": {
+        "deutsch": "das Rennen",
+        "englisch": "the race (sport)"
+    },
+    "155": {
+        "deutsch": "die Fitness",
+        "englisch": "the fitness"
+    },
+    "156": {
+        "deutsch": "der Sieg",
+        "englisch": "the victory"
+    },
+    "157": {
+        "deutsch": "die Geometrie",
+        "englisch": "the geometry"
+    },
+    "158": {
+        "deutsch": "die Mathematik",
+        "englisch": "the mathematics"
+    },
+    "159": {
+        "deutsch": "das Quadrat",
+        "englisch": "the square"
+    },
+    "160": {
+        "deutsch": "der Kreis",
+        "englisch": "the circle"
+    },
+    "161": {
+        "deutsch": "die Achse",
+        "englisch": "the axis"
+    },
+    "162": {
+        "deutsch": "der Radius",
+        "englisch": "the radius"
+    },
+    "163": {
+        "deutsch": "die Gleichung",
+        "englisch": "the equation"
+    },
+    "164": {
+        "deutsch": "der Durchmesser",
+        "englisch": "the diameter"
+    },
+    "165": {
+        "deutsch": "der Punkt",
+        "englisch": "the point"
+    },
+    "166": {
+        "deutsch": "das Wohnzimmer",
+        "englisch": "the living room"
+    },
+    "167": {
+        "deutsch": "der Flur",
+        "englisch": "the hallway"
+    },
+    "168": {
+        "deutsch": "der Schrank",
+        "englisch": "the closet"
+    },
+    "169": {
+        "deutsch": "die Dusche",
+        "englisch": "the shower"
+    },
+    "170": {
+        "deutsch": "die Treppe",
+        "englisch": "the staircase"
+    },
+    "171": {
+        "deutsch": "der Keller",
+        "englisch": "the basement"
+    },
+    "172": {
+        "deutsch": "das Esszimmer",
+        "englisch": "the dining room"
+    },
+    "173": {
+        "deutsch": "das Krankenhaus",
+        "englisch": "the hospital"
+    },
+    "174": {
+        "deutsch": "die Krankenschwester",
+        "englisch": "the nurse"
+    },
+    "175": {
+        "deutsch": "der Chirurg",
+        "englisch": "the surgery"
+    },
+    "176": {
+        "deutsch": "das Medikament",
+        "englisch": "the medication"
+    },
+    "177": {
+        "deutsch": "die Notaufnahme",
+        "englisch": "the emergency room"
+    },
+    "178": {
+        "deutsch": "die Blutprobe",
+        "englisch": "the blood sample"
+    },
+    "179": {
+        "deutsch": "das Rezept",
+        "englisch": "the receipt"
+    },
+    "180": {
+        "deutsch": "die Spritze",
+        "englisch": "the injection"
+    },
+    "181": {
+        "deutsch": "die Untersuchung",
+        "englisch": "the examination"
+    },
+    "182": {
+        "deutsch": "das Röntgenbild",
+        "englisch": "the X-ray"
+    },
+    "183": {
+        "deutsch": "der Vermögenswert",
+        "englisch": "the asset"
+    },
+    "184": {
+        "deutsch": "die Verstellung",
+        "englisch": "the performance"
+    },
+    "185": {
+        "deutsch": "die Taucher",
+        "englisch": "the diver"
+    },
+    "186": {
+        "deutsch": "der Fels",
+        "englisch": "the rock"
+    },
+    "187": {
+        "deutsch": "die Klippe",
+        "englisch": "the cliff"
+    },
+    "188": {
+        "deutsch": "die Hecke",
+        "englisch": "the hedge"
+    },
+    "189": {
+        "deutsch": "die Fluggesellschaft",
+        "englisch": "the airline"
+    },
+    "190": {
+        "deutsch": "der Breitengrad",
+        "englisch": "the latitude"
+    },
+    "191": {
+        "deutsch": "die Zeitkarte",
+        "englisch": "the season ticket"
+    },
+    "192": {
+        "deutsch": "der Abschnitt",
+        "englisch": "the section"
+    },
+    "193": {
+        "deutsch": "der Regenschirm",
+        "englisch": "the umbrella"
+    },
+    "194": {
+        "deutsch": "die Flitterwochen",
+        "englisch": "the honeymoon"
+    },
+    "195": {
+        "deutsch": "die Geburt",
+        "englisch": "the birth"
+    },
+    "196": {
+        "deutsch": "die Schaufel",
+        "englisch": "the shovel"
+    },
+    "197": {
+        "deutsch": "der Krieg",
+        "englisch": "the war"
+    },
+    "198": {
+        "deutsch": "der Wetterbericht",
+        "englisch": "the weather forecast"
+    },
+    "199": {
+        "deutsch": "die Witz",
+        "englisch": "the joke"
+    },
+    "200": {
+        "deutsch": "der Verkehr",
+        "englisch": "the traffic"
     }
 }

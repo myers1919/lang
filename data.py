@@ -1,10 +1,12 @@
 import json
+import os
 import pandas as pd
 import random
 
 class Data:
     def __init__(self):
         self.dataset = self.get_data()
+        self.stats = self.get_stats()
         self.item_set = None
         self.current_item = None
 
@@ -13,7 +15,16 @@ class Data:
             data = json.load(f)
         data = pd.DataFrame(data)
         data = data.transpose()
+        data = data.reset_index().rename(columns={'index':'id'})
         return data
+    
+    def get_stats(self):
+        self.df_stats = self.dataset.copy()
+        filepath = 'data/stats.csv'
+        if not os.path.exists(filepath):
+            print("Stats file did not exist. Creating it now.")
+            self.df_stats.to_csv(filepath, index=False, encoding="utf-8")
+        
     
     def get_items(self):
         df = self.dataset.copy()

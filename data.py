@@ -19,11 +19,16 @@ class Data:
         return data
     
     def get_stats(self):
-        self.df_stats = self.dataset.copy()
+        df = self.dataset.copy()
+        df['n_seen'] = int(0)
+        df['n_correct'] = int(0)
+        df['n_incorrect'] = int(0)
+        df['%_correct'] = float(0)
         filepath = 'data/stats.csv'
         if not os.path.exists(filepath):
             print("Stats file did not exist. Creating it now.")
-            self.df_stats.to_csv(filepath, index=False, encoding="utf-8")
+            df.to_csv(filepath, index=False, encoding="utf-8")
+        return df
         
     
     def get_items(self):
@@ -42,6 +47,7 @@ class Data:
             self.current_item = self.item_set[0]
 
     def parse_current_item(self):
+        self.id = self.current_item.id
         self.question = self.current_item.deutsch
         self.answer = self.current_item.englisch
         print(f"Current question: {self.question}")
